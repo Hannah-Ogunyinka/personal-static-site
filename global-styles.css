@@ -1,0 +1,215 @@
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture,
+body {
+  margin: 0;
+}
+
+/* reset ul */
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* -------------global styles--------------- */
+
+:root {
+  font-size: 16px;
+  --primary-color: #0f2437;
+  --accent-color: #f7652d;
+  --secondary-color: #e2dfd6;
+  --tertiary-color: #000;
+
+  --title: "Barlow Semi Condensed", sans-serif;
+  --body-text: "Inter", sans-serif;
+
+  --x-large: clamp(2.5rem, 0.9286rem + 7.8571vw, 8rem);
+  --large: clamp(1.5rem, 1.1857rem + 1.5714vw, 2.6rem);
+  --medium: clamp(1.2rem, 1.15rem + 0.25vw, 1.375rem);
+  --small: clamp(1.15rem, 1.1071rem + 0.2143vw, 1.3rem);
+  --x-small: 1rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: var(--primary-color);
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: var(--body-text);
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-size: var(--x-large);
+  text-transform: uppercase;
+  font-family: var(--title);
+  padding-top: 10rem;
+  line-height: 1;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: var(--large);
+  font-weight: 400;
+  line-height: 1.2;
+  width: 20ch;
+  padding-top: 10.4rem;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: var(--medium);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+h4 {
+  color: var(--secondary-color);
+  font-size: var(--small);
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: var(--x-small);
+  width: 50%;
+}
+
+a {
+  color: var(--accent-color);
+  font-size: var(--small);
+}
+
+.hero-flyer {
+  display: flex;
+  height: 100vh;
+}
+
+.hero-pt-1 {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 100%;
+  padding-left: 4rem;
+}
+
+.hero-img-wrapper {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.hero-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.title-text-wrapper {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.text-accent-colour {
+  color: var(--accent-color);
+}
+
+.hero-pt-2 {
+  width: 40%;
+  padding-inline: 2.5rem;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: row;
+  height: 28%;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+
+.time-and-url {
+  width: 50%;
+}
+
+.info-links {
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .hero-flyer {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .hero-pt-1,
+  .hero-pt-2 {
+    width: 100%;
+  }
+
+  .hero-pt-1 {
+    height: 30em;
+    padding-left: 2.5rem;
+  }
+
+  .hero-pt-2 {
+    height: 50%;
+  }
+
+  .hero-img-wrapper {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  h2 {
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-description {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 476px) {
+  .hero-img {
+    object-fit: cover;
+  }
+
+  .hero-description {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time-and-url {
+    width: 100%;
+  }
+
+  p {
+    width: 25ch;
+  }
+}

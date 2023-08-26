@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hannah Ogunyinka</title>
+    <link rel="shortcut icon" href="assets/My image circle.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-outer-container">
+        <div class="flex nav-container">
+          <a class ="logo-wrapper flex" href="index.html">
+            <img class ='logo' src="/assets/My image circle.png">
+            <div class ='logo-text'>create . code . connect</div>
+          </a>
+          <nav aria-label="main navigation">
+            <ul role="menubar" class="flex">
+              <li role="none">
+                <a role="menuitem" class="nav-item__link" href="index.html"
+                  >01. <span class="nav-item-text">Home</span></a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" class="nav-item__link" href="projects.html"
+                  >02. <span class="nav-item-text">Projects</span></a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" class="nav-item__link" href="posts.html"
+                  >03. <span class="nav-item-text">Posts</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu-section">
+          <div class="mobile-icon-wrapper">
+            <img
+            src="assets/Mobile-menu-icon.svg"
+            alt="Mobile-icon"
+            class="mobile-icon"
+            onclick="openNav()"
+            style="cursor: pointer"
+          />
+          </div>
+
+          <div id="myNav" class="mobile-menu">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+
+            <div class="mobile-menu-content">
+              <a href="/index.html">01: Home</a>
+              <a href="/projects.html">02: Projects</a>
+              <a href="/posts.html">03: Posts</a>
+              <btn
+                href=""
+                class="mobile-menu-cta-btn"
+                aria-controls="email-link"
+                ><span
+                  class="sr-only mobile-menu-cta-text"
+                  aria-expanded="false"
+                  >Let's work together!</span
+                ></btn
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="homepage-hero">
+      <div class="standard-container flex hm-pg-hero__wrapper">
+        <div class="hm-pg-hero-text-section flex">
+          <div class="hm-pg-hero__text-wrapper">
+            <h1 class="hm-pg-hero__header">Hannah Ogunyinka</h1>
+            <div class="hm-pg-hero__sub-heading-wrapper flex">
+              <h2 class="hm-pg-hero__sub-heading">full stack designer</h2>
+              <picture>
+                <source
+                  media="(max-width:768px)"
+                  srcset="/assets/circle-mobile.svg"
+                  alt="full stop punctuation"
+                />
+                <img
+                  src="/assets/circle-image__desktop.svg"
+                  alt="full stop punctuation"
+                />
+              </picture>
+            </div>
+            <a href="" class="hero-cta-btn" aria-controls="email-link"
+              ><span class="sr-only hero-cta-text" aria-expanded="false"
+                >Let's work together!</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="hm-pg-hero-image-section">
+          <picture>
+            <source
+              media="(max-width:960px)"
+              srcset="/assets/Extended up studio portrait hair fix-960.jpg"
+              alt="hero image"
+              class="hm-pg-hero-image"
+            />
+            <img
+              src="/assets/Extended up studio portrait hair fix-1440.jpg"
+              alt="hero image"
+              class="hm-pg-hero-image"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="homepage-intro-section">
+      <div class="homepage-intro flex standard-container">
+        <div class="hm-pg-intro-text-wrapper">
+          <p class="hm-pg-intro-text">
+            I help
+            <span class="hm-pg-intro-text-colour">businesses</span> create
+            engaging websites
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="homepage-projects">
+      <div class="standard-container top-bottom-padding">
+        <div class="hm-pg-projects-subheading-container">
+          <h2 class="hm-pg-projects__sub-heading">Projects</h2>
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="/assets/circle-mobile.svg"
+              alt="full stop punctuation"
+            />
+            <img
+              src="/assets/circle-image__desktop.svg"
+              alt="full stop punctuation"
+            />
+          </picture>
+        </div>
+        <div class="hm-pg-projects-case-study-container flex">
+          <div class="hm-pg-projects-case-study-img-container">
+            <img
+              src="assets/IMG_1939.JPG"
+              alt="PEP PEP-case-study-img"
+              class="PEP-case-study-img"
+            />
+          </div>
+          <div class="hm-pg-projects-case-study-text-container">
+            <span class="hm-pg-preheading preheading">Marketing</span>
+            <a href="" class="hm-pg-projects-case-study-text-link">
+              <h3 class="hm-pg-projects-case-study-title">
+                Platinum Events Planning
+              </h3>
+            </a>
+            <p class="hm-pg-projects-case-study-description">
+              Platinum Events Planning are an award winning wedding planning
+              company that deliver unique and memorable occasions for their
+              clients.
+            </p>
+            <a
+              href=""
+              class="hm-pg-projects-case-study-btn"
+              aria-controls="read more btn"
+              ><span class="sr-only hm-pg-projects-case-study-btn-text"
+                >Read More</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="hm-pg-projects-case-study-container flex">
+          <div class="hm-pg-projects-case-study-img-container">
+            <img
+              src="assets/DSCF1530.jpg"
+              alt="PEP PEP-case-study-img-2"
+              class="PEP-case-study-img-2"
+            />
+          </div>
+          <div class="hm-pg-projects-case-study-text-container">
+            <span class="hm-pg-preheading preheading">Ecommerce</span>
+            <a href="" class="hm-pg-projects-case-study-text-link">
+              <h3 class="hm-pg-projects-case-study-title">
+                Tayo's Mixing Bowl
+              </h3>
+            </a>
+            <p class="hm-pg-projects-case-study-description">
+              Tayo’s Mixing Bowl is a custom handmade brownies and cakes
+              business creating high-end treats for special occasions.
+            </p>
+            <a
+              href=""
+              class="hm-pg-projects-case-study-btn"
+              aria-controls="read more btn"
+              ><span class="sr-only hm-pg-projects-case-study-btn-text"
+                >Read More</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="hm-pg-projects-cta-btn-wrapper flex">
+          <a
+            href=""
+            class="hero-cta-btn hm-pg-projects-cta-btn"
+            aria-controls="email-link"
+            ><span class="sr-only hero-cta-text">Let's work together!</span></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="homepage-posts">
+      <div class="standard-container top-bottom-padding">
+        <div class="hm-pg-posts-title-text-container">
+          <span alt="preheading" class="hm-pg-posts-preheading"
+            >Recent Blog Posts</span
+          >
+          <h2 class="hm-pg-posts__sub-heading">Posts</h2>
+          <picture>
+            <source
+              media="(max-width:768px)"
+              srcset="/assets/circle-mobile.svg"
+              alt="full stop punctuation"
+            />
+            <img
+              src="/assets/circle-image__desktop.svg"
+              alt="full stop punctuation"
+            />
+          </picture>
+        </div>
+        <div class="hm-pg-posts-container flex">
+          <div class="hm-pg-single-post-container">
+            <div class="hm-pg-single-post-img-container">
+              <img
+                src="assets/posts img 1.jpg"
+                alt="single-post-img"
+                class="hm-pg-single-post-img"
+              />
+            </div>
+            <div class="hm-pg-single-post-text-container">
+              <span class="post-date-preheading preheading">17 june 2023</span>
+              <a href="" class="hm-pg-single-post-text-link">
+                <h3 class="hm-pg-single-post-title">
+                  post title                <span class="arrow-icon-wrapper">
+                    <svg class = 'arrow-icon'  width="0.8em" height="0.8em" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow-icon-line" d="M3.74854 26.85L31.4382 2.2627" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                        <path class="arrow-icon-line" d="M30.1096 2.76834L1 2.81201" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                        <path  class="arrow-icon-line"d="M30.7679 3.75467L30.7185 31" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                        </svg>
+                </span>
+                </h3>
+
+                    
+              </a>
+
+              <p class="hm-pg-single-post-description">
+                Platinum Events Planning are an award winning wedding planning
+                company that deliver unique and memorable occasions for their
+                clients.
+              </p>
+              <a
+                href=""
+                class="hm-pg-single-post-btn"
+                aria-controls="read more btn"
+                ><span class="sr-only hm-pg-single-post-btn-text"
+                  >Read More</span
+                ></a
+              >
+            </div>
+        </div>
+        <div class="hm-pg-single-post-container">
+            <div class="hm-pg-single-post-img-container">
+              <img
+                src="assets/posts img 2.jpg"
+                alt="single-post-img"
+                class="hm-pg-single-post-img-2"
+              />
+            </div>
+            <div class="hm-pg-single-post-text-container">
+                <span class="post-date-preheading preheading">17 june 2023</span>
+                <a href="" class="hm-pg-single-post-text-link">
+                  <h3 class="hm-pg-single-post-title">
+                    post title                <span class="arrow-icon-wrapper">
+                      <svg class = 'arrow-icon'  width="0.8em" height="0.8em" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="arrow-icon-line" d="M3.74854 26.85L31.4382 2.2627" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                          <path class="arrow-icon-line" d="M30.1096 2.76834L1 2.81201" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                          <path  class="arrow-icon-line"d="M30.7679 3.75467L30.7185 31" stroke="#E97B2C" stroke-width="4" stroke-linejoin="round"/>
+                          </svg>
+                  </span>
+                  </h3>
+  
+                      
+                </a>
+  
+                <p class="hm-pg-single-post-description">
+                  Platinum Events Planning are an award winning wedding planning
+                  company that deliver unique and memorable occasions for their
+                  clients.
+                </p>
+                <a
+                  href=""
+                  class="hm-pg-single-post-btn"
+                  aria-controls="read more btn"
+                  ><span class="sr-only hm-pg-single-post-btn-text"
+                    >Read More</span
+                  ></a
+                >
+              </div>
+        </div>
+      </div>
+      <div class="hm-pg-posts-cta-btn-wrapper flex">
+        <a href="" class="hm-pg-posts-cta-btn" aria-controls="email-link"
+          ><span class="sr-only hm-pg-posts-cta-text"
+            >Let's work together!</span
+          ></a
+        >
+      </div>
+    </section>
+    <footer>
+        <p>&copy<span class = "footer-currentyear" id = "currentYear">2027</span> Hannah Ogunyinka</p>
+    </footer>
+  </body>
+</html>
